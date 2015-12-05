@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+    <script type="text/javascript" src="js/Facebook.js"></script>
+    <script type="text/javascript">
+
+    var facebook = new Facebook('YOUR_APP_ID');
+
+    facebook.init(function () {
+        facebook.getRandomImage(function (img) {
+            var oImg = document.createElement("img");
+            oImg.setAttribute('src', img);
+            document.body.appendChild(oImg);
+        });
+    });
+
+    </script>
+
+</body>
+</html>
